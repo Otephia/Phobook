@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".Books.StefanSatrancActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+    >
+        <TextView
+                android:id="@+id/kitap"
+                android:text="Satranç"
+                android:textSize="30sp"
+                android:textColor="@color/yazi"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/yazar"
+                android:text="Stefan Zweig"
+                android:textSize="15sp"
+                android:textColor="@color/yazi"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/play"
+                    android:id="@+id/imageView4" android:layout_weight="1"/>
+            <Button
+                    android:text="Dinle"
+                    android:textSize="10dp"
+                    android:background="@color/ust"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" android:id="@+id/buttonbaslat" android:layout_weight="1"/>
+
+            <Button
+                    android:text="Durdur"
+                    android:textSize="10dp"
+                    android:background="@color/ust"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" android:id="@+id/buttondurdur" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/pause" android:id="@+id/imageView"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+                android:text="Geceyarısı New York'tan kalkıp Buenos Aires'e gidecek olan
+büyük yolcu vapurunda, son saatin alışılmış telaşı ve
+koşuşturması yaşanıyordu. Karadakiler arkadaşlarını geçirmek
+için itişip kakışıyor, eğik kasketli telgrafçı çocuklar birtakım adlar
+bağırarak yolcu salonlarında oradan oraya koşturuyor, bavullar
+ve çiçekler sürüklenerek vapura yükleniyor, orkestra güvertede
+durup dinlenmeden çalarken çocuklar merdivenlerde merakla bir
+aşağı bir yukarı koşuşuyorlardı. Bu kargaşanın biraz ötesinde,
+gezinti güvertesinde bir tanıdıkla laflıyordum ki, yanıbaşımızda
+iki ya da üç kez keskin bir flaş patladı; tam kalkıştan önce
+gazeteciler ünlü birini soru yağmuruna tutuyor ve fotoğraflarını
+çekiyordu anlaşılan. Arkadaşım o tarafa bakıp gülümsedi.
+'Ender bulunan bir kuş düşmüş ağlarına, Czentovic.' Bu
+        açıklamanın üzerine ona anlamaz gözlerle bakmış olmalıyım ki,
+        ekledi: 'Mirko Czentovic, dünya satranç şampiyonu. Turnuva
+        oyunlarıyla doğudan batıya bütün Amerika'yı bucak bucak
+        dolaştı, şimdi de yeni zaferler kazanmak için Arjantin'e gidiyor.'
+        Bu genç dünya şampiyonunu ve hatta ışık hızıyla
+        yükselmesiyle ilgili bazı ayrıntıları bile anımsadım o an; benden
+        daha dikkatli bir gazete okuyucusu olan arkadaşım, bu ayrıntıları
+        tamamlayan bir sürü gülünç hikâye biliyordu adamla ilgili. Bir yıl
+        kadar önce beklenmedik bir çıkış yapan Czentovic'in adı
+        Aljechin, Capablanca, Tartakower, Lasker, Bogoljubow gibi en
+        saygın ustalarla birlikte anılır olmuştu. 1922'de New York'taki
+        satranç turnuvasında ortaya çıkan yedi yaşındaki mucize çocuk
+        Rzecewski'den bu yana, adı sanı duyulmamış birinin anlı şanlı
+        satranç loncasına girişi hiç bu kadar geniş yankı
+        uyandırmamıştı.
+        Çünkü Czentovic'in zihinsel özellikleri, böyle göz kamaştırıcı
+        bir yükselmenin ipuçlarını kesinlikle vermemişti. Çok geçmeden
+        bir söylenti yayıldı, bu satranç şampiyonu özel yaşantında
+        herhangi bir konuşma sırasında bir tümceyi dilbilgisi yanlışı
+        olmadan kuramıyordu ve kızgın meslektaşlarından birinin öfkeli
+        bir alayla söylediğine göre, 'her alanda evrensel bir kültürsüzlük
+        içindeydi'.
+        Yoksul bir Slav Tuna gemicisi olan babasının ufacık kayığını
+        bir gece bir tahıl gemisi ezdi, o sapa bölgenin papazı da o
+        zamanlar on iki yaşında olan Mirko'ya acıyıp babasının
+        ölümünden sonra onun bakımını üstlendi, iyi yürekli papaz canla
+        başla uğraşıp ağzını bıçak açmayan, anlama güçlüğü çeken
+        çocuğa köy okulunda öğrenemediği şeyleri evde özel dersler
+        vererek öğretip açığını kapatmaya çalıştı.
+        Ama çabaları sonuçsuz kaldı. Mirko, kendisine yüz kez
+        anlatılan harflere hâlâ boş boş bakıyordu; ağır işleyen beyninde,
+        en basit ders konularıyla bile uğraşacak güç yoktu. On dört
+        yaşındayken bile, hesap yapması gerektiğinde parmaklarından
+        yardım alıyordu ve bir kitap ya da gazete okumak, yetişme
+        çağındaki bu çocuk için daha da çok çaba gerektiriyordu. Bu
+        konuda Mirko'nun isteksiz ya da dik kafalı olduğu kesinlikle
+        söylenemezdi. Ondan rica edilenleri karşı çıkmadan yapıyordu,
+        su getiriyor, odun kırıyor, tarlada çalışıyor, mutfağı temizliyor ve
+        insanları çileden çıkaran bir yavaşlıkla da olsa, verilen her görevi
+        yerine getiriyordu, güvenilir bir çocuktu. Ama bu tuhaf oğlanda
+        iyi yürekli papazın canını en çok sıkan şey, ilgisizliğiydi. Özel bir
+        çağrı almadan hiçbir şey yapmazdı, hiçbir zaman soru sormazdı,
+        başka oğlanlarla oynamaz ve bir şey ona açık bir dille
+        buyurulmadığı sürece kendiliğinden bir uğraş aramazdı; Mirko
+        ev işlerini bitirir bitirmez, çayırdaki koyunlar gibi boş boş bakarak
+        odada kıpırdamadan oturur, çevresinde olanlara en ufak bir ilgi
+        bile göstermezdi.
+        Papaz akşamlan uzun çiftçi piposunu tüttürerek, her zamanki
+        gibi jandarma çavuşuyla üç el satranç oynarken, sarı kafalı
+        oğlan hiç ses çıkarmadan yanla rina çömelir ve ağırlaşmış göz
+        kapaklarının altından, uyku akan ve kayıtsız gözlerle kareli
+        tahtaya bakardı.
+        Bir kış akşamı, iki kafadar günlük oyunlarına dalmışken, köyün
+        ana yolundan bu yana hızla yaklaşan bir kızağın küçük çanları
+        duyuldu. Kasketi karla kaplı bir çiftçi telaşla içeri daldı, yaşlı
+        annesi ölüm döşeğindeymiş, papaz da ona son ayinini yapmak
+        için hemen gelmeliymiş. Papaz hiç duraksamadan onu izledi.
+        Birasını daha bitirmemiş olan jandarma çavuşu, onları
+        uğurlarken yeni bir pipo yaktı ve uzun konçlu, ağır çizmelerini
+        giymeye hazırlanırken, Mirko'nun bakışlarının oyuna başlanmış
+        satranç tahtasına nasıl dikildiğini ayrımsadı.
+        'Ne o, oyunu tamamlamak mı istiyorsun?' dedi alaycı bir
+        sesle, uykulu çocuğun tahtadaki tek bir taşı bile doğru oynamayı
+        beceremeyeceğinden son derece emindi. Oğlan çekinerek ona
+        baktı, sonra başını salladı ve papazın yerine oturdu.
+        On dört hamleden sonra jandarma çavuşu mat olmuştu ve
+        yenilgisinin yanlışlıkla yaptığı dikkatsiz bir hamleden
+        kaynaklanmadığını itiraf etmek zorunda kaldı, ikinci el de
+        birinciden farklı olmadı."
+
+                android:textColor="#111111"
+                android:textStyle="italic"
+                android:layout_width="350sp"
+                android:layout_height="match_parent" android:id="@+id/textView" android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</ScrollView>

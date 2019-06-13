@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/phobookbackground"
+    android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+    <EditText
+            android:id="@+id/editText1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yazi"
+            android:hint=" Kullanıcı Adı"
+            android:textColorHint="@color/yazi"
+            android:layout_marginTop="250dp"/>
+
+    <EditText
+            android:id="@+id/editText2"
+            android:layout_below="@+id/editText1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yazi"
+            android:hint=" Şifre"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:textColorHint="@color/yazi"
+            />
+    <CheckBox
+            android:text="Beni Hatırla"
+            android:textColor="@color/yazi"
+            android:id="@+id/benihatirla"
+            android:layout_below="@+id/editText2"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+
+    <Button
+            android:id="@+id/button1"
+            android:textColor="@color/yazi"
+            android:layout_below="@+id/benihatirla"
+            android:text="Giriş"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:background="@color/login"
+            android:layout_marginTop="7dp"/>
+
+    <Button
+            android:id="@+id/button2"
+            android:textColor="@color/yazi"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:text="Kayıt ol"
+            android:layout_below="@+id/button1"
+            android:background="@color/login"
+            android:layout_marginTop="7dp"/>
+
+
+
+</RelativeLayout>

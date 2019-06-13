@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".Books.NietzscheBoyleBuyurduActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+    >
+        <TextView
+                android:id="@+id/kitap"
+                android:text="Böyle Buyurdu Zerdüşt"
+                android:textSize="30sp"
+                android:textColor="@color/yazi"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/yazar"
+                android:text="Friedrich Nietzsche"
+                android:textSize="15sp"
+                android:textColor="@color/yazi"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/play"
+                    android:id="@+id/imageView4" android:layout_weight="1"/>
+            <Button
+                    android:text="Dinle"
+                    android:textSize="10dp"
+                    android:background="@color/ust"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" android:id="@+id/buttonbaslat" android:layout_weight="1"/>
+
+            <Button
+                    android:text="Durdur"
+                    android:textSize="10dp"
+                    android:background="@color/ust"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp" android:id="@+id/buttondurdur" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp" app:srcCompat="@drawable/pause" android:id="@+id/imageView"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+                android:text="Zerdüşt otuz yaşındayken yurdunu ve yurdunun
+gölünü bırakarak dağa çekildi. Orada on yıl
+boyunca bıkmadan, usanmadan ruhunu dinledi.
+Ama sonunda gönlünde bir değişiklik duydu.
+Bir gün tan kızıllığında kalktı, güneşin karşısına
+geçti ve ona şöyle seslendi:
+“Ey büyük yıldız, aydınlatacak bir şeyin olmasa
+yazgın ne olurdu? On yıl var ki buraya,
+mağarama çıkıyorsun. Eğer ben, kartalım ve
+yılanım olmasaydık ışığından ve yolundan
+bezerdin. Fakat biz her sabah seni bekledik.
+Işığının fazlasını aldık ve bunun için seni
+kutsadık. Bak; ben, fazla bal toplamış arı gibi
+uzanacak ellere muhtacım.
+İnsanlar arasında akıllılar deliliklerine, fakirler
+de zenginliklerine bir defa daha sevininceye
+kadar armağanlarımı paylaştırmak istiyorum.
+Bunun için aşağılara inmeliyim. Nasıl ki sen
+cömert yıldız, akşamları denizin arkasına iniyor
+ve arka dünyaya ışık götürüyorsan ben de senin
+gibi, inmek istediğim insanların aralarına
+inmeliyim.
+Ey, en büyük mutluluğu bile kıskanmadan
+görebilen tok göz, beni kutsa. Taşmak isteyen
+kadehi kutsa ki içinden su, altın gibi aksın ve
+mutluluğun parıltılarını her tarafa taşısın. Bak,
+bu kadeh yine boşalmak, Zerdüşt yine insan
+olmak istiyor.”
+Zerdüşt’ün inişi böyle başladı.
+2
+Zerdüşt, yalnız olarak dağdan aşağıya indi ve
+kimse ile karşılaşmadı. Fakat ormanın içine
+girince karşısına yaşlı bir adam çıktı. Bu adam
+ormanda kök toplamak için kutsal kulübesinden
+çıkmıştı. İhtiyar, Zerdüşt’e şöyle seslendi:
+“Bu yolcu bana yabancı gelmiyor, bir kaç yıl
+önce buradan geçmişti. Adı Zerdüşt’tü, fakat o
+değişmiş. O zaman külünü dağa götürüyordun,
+bu gün ateşini vadilere mi taşımak istiyorsun?
+Kundakçılık cezasından korkmuyor musun?
+Evet, Zerdüşt’ü tanıdım. Onun gözü saftır ve
+ağzında hiçbir kin gizlenmez. Dans eder gibi
+yürümesi ondan değil mi? Zerdüşt değişmiş,
+Zerdüşt çocuk olmuş. O uyanıktır; şimdi
+uyuyanlar arasında ne yapacak? Yalnızlıkta iken
+bir deniz içindeymiş gibi yaşıyordun ve deniz
+seni taşıyordu. Şimdi ne yazık ki karaya çıkmak
+istiyorsun. Ne yazık ki gövdeni yine kendin
+sürüklemek istiyorsun.”
+Zerdüşt cevap verdi: “İnsanları seviyorum.”
+İhtiyar dedi ki; “Benim ormana ve yalnızlığa
+çekilişim neden, insanları pek çok sevdiğimden
+değil mi? Şimdi tanrıyı seviyorum. İnsanları
+sevmiyorum. İnsan, bence oldukça eksik bir
+şeydir. İnsan sevmek beni yok edebilirdi.”
+Zerdüşt dedi ki; “Ne diye sevgiden
+bahsediyorum, ben insanlara bir armağan
+götürüyorum.”
+İhtiyar; “Onlara bir şey verme. Onlardan al, daha
+iyi. Onlardan bir şey al ve onlarla beraber taşı,
+daha iyi. Bu onların hoşuna gider, yeter ki senin
+hoşuna gitsin. Eğer ki onlara bir şey vermek
+istersen sadakadan başka bir şey verme. Ve
+bunun için de onları dilendir.” dedi.
+Zerdüşt; “Hayır” dedi. “ben sadaka vermem.
+Sadaka verecek kadar fakir değilim.”
+İhtiyar, Zerdüşt’e güldü ve şöyle dedi:
+“Öyle ise hazinelerini kabul ettirmeye bak. Onlar
+yalnızlığa çekilenlere karşı güvensizdir ve bizim,
+armağan vermek için geldiğimize inanmazlar.
+Bizim, sokaklardaki adımlarımız onlara çok
+sessiz gelir. Gece, güneşin doğmasından çok
+önce, yataktayken, bir adamın ayak sesini
+işitseler kendi kendilerine ‘bu hırsız nereye
+gidiyor?’; diye sorarlar. İnsanlara gitme,
+ormanda kal. Hayvanlar arasına gitsen daha iyi.
+Neden benim gibi olmak istemiyorsun? Ayılar
+arasında ayı, kuşlar arasında kuş.”
+İhtiyar, ormanda ne yaparsın?” diye sordu
+        Zerdüşt. İhtiyar şöyle dedi:
+        “Ben şarkılar besteleyip söylerim ve şarkılar
+        bestelerken güler, ağlar ve söylenirim. Böylece
+        tanrıyı överim. Şarkı söyleyerek, ağlayarak,
+        gülerek tanrıyı, kendi tanrımı överim. Şimdi
+        söyle bakalım bize getirdiğin armağan ne?”
+        Zerdüşt, bu sözü işitince ihtiyarı selamladı ve
+        şöyle konuştu:
+        “Size verecek neyim olabilir? Bırakın, çabuk
+        gideyim de sizden bir şey almayayım.”
+        İhtiyarla Zerdüşt iki çocuk gibi, gülüşerek
+        ayrıldılar.
+        Zerdüşt, yalnız kalınca kendi kendine söylendi:
+        “Nasıl oluyor da ormandaki bu kutsal ihtiyar,
+        tanrının ölmüş olduğunu daha işitmemiş
+        bulunuyor?"
+
+                android:textColor="#111111"
+                android:textStyle="italic"
+                android:layout_width="350sp"
+                android:layout_height="match_parent" android:id="@+id/textView" android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</ScrollView>

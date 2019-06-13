@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#064D45</color>
+    <color name="colorPrimaryDark">#042C26</color>
+    <color name="colorAccent">#F1EEEF</color>
+    <color name="yazi">#FFFDFD</color>
+    <color name="login">#4E3A22</color>
+    <color name="ust">#351203</color>
+    <color name="books">#301A0A</color>
+
+</resources>

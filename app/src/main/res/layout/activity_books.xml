@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/booksbackground"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".BooksActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                app:srcCompat="@drawable/satranc"
+                android:id="@+id/imageView3"/>
+        <Button
+                android:text="Satranç'ı Oku"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:background="@color/login"
+                android:textColor="@color/yazi"
+                android:id="@+id/button"
+                android:onClick="satranc"
+                tools:ignore="OnClick"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                app:srcCompat="@drawable/donusum"
+                android:id="@+id/imageView2"/>
+        <Button
+                android:text="Dönüşüm'ü Oku"
+                android:background="@color/login"
+                android:textColor="@color/yazi"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:onClick="donusum"
+                tools:ignore="OnClick"
+        />
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                app:srcCompat="@drawable/boylebuyurduzerdust"
+                android:id="@+id/imageView1"/>
+        <Button
+                android:text="Böyle Buyurdu Zerdüşt'ü Oku"
+                android:background="@color/login"
+                android:textColor="@color/yazi"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:onClick="boylebuyurduzerdust"
+        />
+    </LinearLayout>
+</ScrollView>

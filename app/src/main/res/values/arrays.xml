@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city">
+        <item>Hk.</item>
+        <item>Dönüşüm</item>
+        <item>Satranç</item>
+        <item>BB Zerdüşt</item>
+        <item>Olasılıksız</item>
+        <item>Savaş ve Barış</item>
+        <item>Hobbit</item>
+        <item>Araba Sevdası</item>
+        <item>Nutuk Makinesi</item>
+        <item>Feride</item>
+        <item>Nutuk</item>
+
+    </string-array>
+
+    <string-array name="content">
+        <item>Bu uygulama Recep Aykut tarafından Medipol Üniversitesi Bilgisayar Programcılığı 2018-2019 Eğitim - Öğretim yılı Yönlendirilmiş Çalışma final projesi sebebiyle yapılmıştır.</item>
+        <item>Gregor Samsa, bir sabah bunaltıcı düşlerden uyandığında kendini dev bir böceğe dönüşmüş olarak bulur. İlk başta gördüklerinin gerçek olduğunu inanmak istemez ancak yatağından kalkmak isteyince buna inanmak zorunda kalır. O artık dev bir böcektir. Her sabah işe gitmek için bindiği tren saat altıda hareket etmektedir; bu yüzden en geç saat beşte uyanmak zorundadır. </item>
+        <item>New York’tan Buenos’e giden bir yolcu gemisinde yolcular arasında bulunan bir milyoner , dünya satranç şampiyonu Mirko Czentovic’e , ücret karşılığı bir parti satranç oynamayı önerir. İkisinin oyununu izleyen Avusturyalı Dr.B oyun sırasında kendini tutamayıponların oyununa karışınca, şampiyonla karşılaşması önerilir kendisine.</item>
+        <item>İyi ki Nietzsche Zerdüşt’ü yaratmış ve iyi ki Zerdüşt yola çıkmış.
+
+            Zerdüşt boşa buyurmaz hiçbir şeyi:
+
+            Cesaretlendirir ve düşündürür. Dürter ve uyandırır. Dokundurur ve hissettirir…
+
+            Edebiyatla felsefeyi bu kadar güzel harmanlayan ve insanlığı harekete geçirmek için yaratılan bu eserle, herkesin yolu bir kere de olsa Zerdüşt’le kesişmeli!</item>
+        <item>İnsanoğlunun hayata dair bir çok surusu vardır ve genelde cevaplar sürekli felsevi söylemlerde mevcuttur. Fakat hayatta açıklanamayan bir çok olasılık vardır. Düşündüğünüz insan ile birden bire karşılaşmanız, birilerinin şans oyunlarını kazanırken sizin kazanamamanız, birşey yaparken içinizden bir hissin size ne yapacağınızı söylemesi, arada sırada deja vu tarzında hissetmeniz ve buna anlam verememeniz, rüyanızda gördüğünüzü gerçek hayatta bire bir yaşamanız yada rüya mı gerçek mi diye karıştırmanız.</item>
+        <item>David Caine bir üniversitede olasılık ve istatistik derslerine giren bir eğitim görevlisidir.  Bir gün ders anlatırken pis bir koku hissederek bayılmış ve ders anlatmayı bırakarak  iyi bir poker oyuncusu olmuştur. Yine bir gün  poker oynamak için  podvalla gitmiş,  yaşlı  bir oyuncu olan Walterla masaya oturmuştur. Bu defa sürekli kaybeden o dur.  Mekân sahibi Vitaly Nikolaevin  sürekli ve güvenilir bir müşterisi olan  David Caine ye  15.000 dolar kredi açmış  krediyi ortaya koymuştu. </item>
+        <item>Hobbitlerden olan Bilbo Baggins bu serinin ve filmin aslında baş kahramanı. Çünkü içinde taşıdığı maceracı, refleksi kuvvetli yaşamını konu alan eser onun esrarengiz bir dünyaya adım atmasını ve başından geçenleri anlatıyor bir bakıma. Bilbo Baggins büyücü uzun boylu ak sakallı ve saçlı Gandalf ve cüceler ile birlikte cücelerin hazinesini oldukça kritik, stratejik bir dağın içinde yatan Smaug adlı acımasız ejderhadan almak için pek de gönüllü olmadan bu derin ve sisli yola çıkar.  </item>
+        <item>Araba Sevdası</item>
+        <item>Nutuk Makinesi</item>
+        <item>Feride</item>
+        <item>Nutuk</item>
+    </string-array>
+
+
+
+</resources>
