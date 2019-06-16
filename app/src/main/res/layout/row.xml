@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"
+              android:background="@color/login"
+              android:orientation="horizontal"
+              android:gravity="center">
+    
+    <ImageView
+            android:id="@+id/logo"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    
+    <LinearLayout
+            android:background="@color/login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                    android:id="@+id/kitapadi1"
+                    android:textColor="@color/yazi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Kitap Adı"
+            />
+        <TextView
+                android:id="@+id/aciklama1"
+                android:textColor="@color/yazi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:text="Açıklama"
+        />
+
+
+    </LinearLayout>
+</LinearLayout>

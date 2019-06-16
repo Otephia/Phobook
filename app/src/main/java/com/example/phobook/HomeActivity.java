@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.widget.TextView;
 
@@ -25,8 +26,8 @@ public class HomeActivity extends AppCompatActivity implements ListFrag.GondorLi
         TextView textView1 = (TextView) findViewById(R.id.textView1);
         TextView textView2 = (TextView) findViewById(R.id.textView2);
 
-        textView1.setText("Hoşgeldin: " + text);
-        textView2.setText("Şifre: " + number);
+        textView1.setText("Hoşgeldin: " + text + " - ");
+        textView2.setText("Şifre: " +  "**" + number);
     }
 
     @Override

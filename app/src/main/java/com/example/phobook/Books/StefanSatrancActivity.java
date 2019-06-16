@@ -7,30 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.example.phobook.R;
-import com.github.barteksc.pdfviewer.PDFView;
 
-public class NietzscheBoyleBuyurduActivity extends AppCompatActivity {
-
-
-    MediaPlayer boylebuyurdu;
-    Button baslat,durdur,pdfbtn;
-
-
+public class StefanSatrancActivity extends AppCompatActivity {
+    MediaPlayer satranc;
+    Button baslat,durdur,pdfbtn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nietzsche_boyle_buyurdu);
+        setContentView(R.layout.activity_stefan_satranc);
 
-        boylebuyurdu = MediaPlayer.create(NietzscheBoyleBuyurduActivity.this, R.raw.bertolt1);
+        satranc = MediaPlayer.create(StefanSatrancActivity.this, R.raw.bertolt1);
 
-        baslat = (Button) findViewById(R.id.buttonbaslat);
-        durdur = (Button) findViewById(R.id.buttondurdur);
-        pdfbtn = (Button) findViewById(R.id.pdfbtn);
+        baslat = (Button) findViewById(R.id.buttonbaslat2);
+        durdur = (Button) findViewById(R.id.buttondurdur2);
+        pdfbtn2 = (Button) findViewById(R.id.pdfbtn2);
 
-        pdfbtn.setOnClickListener(new View.OnClickListener() {
+        pdfbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NietzscheBoyleBuyurduActivity.this, NietzscheBoyleBuyurduPDF.class);
+                Intent intent = new Intent(StefanSatrancActivity.this, StefanSatrancPDF.class);
                 startActivity(intent);
             }
         });
@@ -38,17 +33,18 @@ public class NietzscheBoyleBuyurduActivity extends AppCompatActivity {
         baslat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boylebuyurdu.start();
+                satranc.start();
             }
         });
 
         durdur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boylebuyurdu.pause();
+                satranc.pause();
             }
-        });
 
-    }
+    });
+}
 
 }
+

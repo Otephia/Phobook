@@ -18,6 +18,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "email";
     private static final String KEY_PH_NO = "password";
+    private static final String [] BOOK_LIST = {"Book1","Book2","Book3"};
 
     public DatabaseOpenHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
