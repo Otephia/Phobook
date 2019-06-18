@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "67383647539",
+    "firebase_url": "https://phobook-35271.firebaseio.com",
+    "project_id": "phobook-35271",
+    "storage_bucket": "phobook-35271.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67383647539:android:acff7fb88a352d51",
+        "android_client_info": {
+          "package_name": "com.example.phobook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67383647539-1j6mc3im3nvcpuhfd8k39favk5jk6jlb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phobook",
+            "certificate_hash": "5017ca626622e189a2d73db0872c32c4297aeb52"
+          }
+        },
+        {
+          "client_id": "67383647539-2neq464nue33vulh2r8vabgvfh6e6ssr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI2Af5ZCSHWPJ7iwUXIaiPoSWnC5OVK-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67383647539-2neq464nue33vulh2r8vabgvfh6e6ssr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
