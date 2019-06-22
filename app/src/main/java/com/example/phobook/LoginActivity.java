@@ -1,107 +1,102 @@
 package com.example.phobook;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String EXTRA_NUMBER = "com.example.application.example.EXTRA_NUMBER";
-    public static final String EXTRA_TEXT = "com.example.application.example.EXTRA_TEXT";
-
-    EditText editText1,editText2;
-    Button button,button2;
-    DatabaseOpenHelper myDb;
+    private Button btnRegister;
+    private Button btnLogin;
+    private EditText textEmail;
+    private EditText textPassword;
+    private ProgressDialog progressDialog;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        myDb = new DatabaseOpenHelper(getApplicationContext());
+        firebaseAuth = FirebaseAuth.getInstance();
 
 
-        button = (Button) findViewById(R.id.button1);
-        editText1 = (EditText) findViewById(R.id.editText1);
-        editText2 = (EditText)findViewById(R.id.editText2);
-        button2 = findViewById(R.id.button2);
+        btnRegister = (Button)findViewById(R.id.button2);
+        btnLogin = (Button) findViewById(R.id.button1);
+        textEmail = (EditText) findViewById(R.id.editText1);
+        textPassword = (EditText) findViewById(R.id.editText2);
 
-        button.setOnClickListener(this);
-        button2.setOnClickListener(this);
+        progressDialog = new ProgressDialog(this);
+        btnLogin.setOnClickListener(this);
+        btnRegister.setOnClickListener(this);
+
+    }
+
+    private void userLogin(){
+
+        String email = textEmail.getText().toString().trim();
+        String password = textPassword.getText().toString().trim();
+
+        if (TextUtils.isEmpty(email)){
+            Toast.makeText(this, "E-mail Boş Bırakılamaz",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(password)){
+            Toast.makeText(this, "Şifre Boş Bırakılamaz",Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        progressDialog.setMessage("Giriş Yapılıyor..");
+        progressDialog.show();
+
+        firebaseAuth.signInWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()){
+                            progressDialog.dismiss();
+                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                            Toast.makeText(LoginActivity.this, "Giriş Başarılı", Toast.LENGTH_SHORT).show();
+
+                        }else{
+                            progressDialog.dismiss();
+                            Toast.makeText(LoginActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+
 
     }
 
-    public void openActivity2(){
-
-        String text = editText1.getText().toString();
-        int number = Integer.parseInt(editText2.getText().toString());
-
-        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-        intent.putExtra(EXTRA_TEXT, text);
-        intent.putExtra(EXTRA_NUMBER,number);
-        startActivity(intent);
-
-    }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
 
-            case R.id.button1:
-                login();
-                break;
-            case R.id.button2:
-                register();
-                break;
-        }
-    }
+        if (v == btnLogin){
+            userLogin();
 
-
-    private void login(){
-        String email= String.valueOf(editText1.getText());
-        String password= String.valueOf(editText2.getText());
-
-        if (editText1.length()==0){
-            editText1.setError("Boş Giriş Yapılamaz!");
-        }
-        else if (editText2.length()==0){
-            editText2.setError("Boş Giriş Yapılamaz!");
-        }
-        else {
-
-            Toast.makeText(getApplicationContext(),"Kullanıcı Bulunamadı! Lütfen Girdiğiniz Bilgilerle Kayıt Olmak İçin Kayıt Ol'a Tıklayın!",Toast.LENGTH_LONG).show();
-
-            List<User> userList =  myDb.getAllUsers();
-
-            for(User user : userList){
-                if(user.getEmail().equals(email) && user.getPassword().equals(password)){
-                    Toast.makeText(getApplicationContext()," Giriş Başarılı",Toast.LENGTH_LONG).show();
-                    openActivity2();
-
-                }
-
-            }
         }
 
+        if (v == btnRegister){
 
+            Intent i = new Intent(LoginActivity.this,RegisterActivity.class);
+            startActivity(i);
 
-
-    }
-
-    private void register(){
-        String email = String.valueOf(editText1.getText());
-        String password = String.valueOf(editText2.getText());
-
-        User newUser = new User(email,password);
-
-        myDb.addUser(newUser);
-
-        Toast.makeText(getApplicationContext(),"Kayıt Oldunuz! Tekrar Giriş Yap'a Tıklayın!",Toast.LENGTH_LONG).show();
+        }
     }
 }

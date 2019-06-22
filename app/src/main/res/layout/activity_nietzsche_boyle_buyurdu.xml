@@ -43,29 +43,37 @@
                 android:gravity="center"
                 android:layout_weight="1">
 
-            <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="30dp" app:srcCompat="@drawable/play"
-                    android:id="@+id/imageView4" android:layout_weight="1"/>
             <Button
                     android:text="Dinle"
                     android:textSize="10dp"
+                    android:drawableLeft="@drawable/play"
                     android:textColor="@color/yazi"
                     android:background="@color/ust"
-                    android:layout_width="30dp"
-                    android:layout_height="25dp" android:id="@+id/buttonbaslat" android:layout_weight="1"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonbaslat"
+                    />
 
             <Button
                     android:text="Durdur"
                     android:textSize="10dp"
+                    android:drawableLeft="@drawable/pause"
                     android:textColor="@color/yazi"
                     android:background="@color/ust"
-                    android:layout_width="30dp"
-                    android:layout_height="25dp" android:id="@+id/buttondurdur" android:layout_weight="1"/>
-            <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="30dp" app:srcCompat="@drawable/pause" android:id="@+id/imageView"
-                    android:layout_weight="1"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/buttondurdur"/>
+
+            <Button
+                    android:text="Ekle"
+                    android:textSize="10dp"
+                    android:drawableLeft="@drawable/plus"
+                    android:textColor="@color/yazi"
+                    android:background="@color/ust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addList" />
+
         </LinearLayout>
 
         <TextView
@@ -122,7 +130,10 @@ Kundakçılık cezasından korkmuyor musun?
                 android:background="@color/ust"
                 android:id="@+id/pdfbtn"
                 android:layout_width="60dp"
-                android:layout_height="30dp"/>
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+        />
+
     </LinearLayout>
 
 

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@drawable/phobookbackground"
-    android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/phobookbackground"
                 android:orientation="vertical"
                 android:gravity="center_horizontal"
-    tools:context=".LoginActivity">
+                tools:context=".LoginActivity">
 
     <EditText
             android:id="@+id/editText1"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:textColor="@color/yazi"
-            android:hint=" Kullanıcı Adı"
+            android:hint="E-mail"
             android:textColorHint="@color/yazi"
+            android:inputType="textEmailSubject"
             android:layout_marginTop="250dp"/>
 
     <EditText
@@ -24,11 +25,11 @@
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:textColor="@color/yazi"
-            android:hint=" Şifre"
+            android:hint="Şifre"
             android:ems="10"
-            android:inputType="numberPassword"
+            android:inputType="textVisiblePassword"
             android:textColorHint="@color/yazi"
-            />
+    />
 
     <Button
             android:id="@+id/button1"

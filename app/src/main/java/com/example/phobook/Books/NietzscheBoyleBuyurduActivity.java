@@ -13,7 +13,7 @@ public class NietzscheBoyleBuyurduActivity extends AppCompatActivity {
 
 
     MediaPlayer boylebuyurdu;
-    Button baslat,durdur,pdfbtn;
+    Button baslat,durdur,pdfbtn,add;
 
 
     @Override
@@ -26,6 +26,7 @@ public class NietzscheBoyleBuyurduActivity extends AppCompatActivity {
         baslat = (Button) findViewById(R.id.buttonbaslat);
         durdur = (Button) findViewById(R.id.buttondurdur);
         pdfbtn = (Button) findViewById(R.id.pdfbtn);
+        add = (Button) findViewById(R.id.addList);
 
         pdfbtn.setOnClickListener(new View.OnClickListener() {
             @Override

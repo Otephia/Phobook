@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#042C26</color>
     <color name="colorAccent">#F1EEEF</color>
     <color name="yazi">#FFFDFD</color>
-    <color name="login">#4E3A22</color>
-    <color name="ust">#351203</color>
-    <color name="books">#301A0A</color>
+    <color name="login">#774E3A22</color>
+    <color name="ust">#6035241C</color>
+    <color name="books">#7A301A0A</color>
+    <color name="bookList">#C8B1A389</color>
 
 </resources>

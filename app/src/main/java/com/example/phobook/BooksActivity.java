@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import com.example.phobook.Books.KafkaDonusumActivity;
 import com.example.phobook.Books.NietzscheBoyleBuyurduActivity;
 import com.example.phobook.Books.StefanSatrancActivity;
 import org.jetbrains.annotations.Nullable;
@@ -47,10 +46,8 @@ public class BooksActivity extends AppCompatActivity {
             }
                 if (position == 1){
 
-                    Intent intent = new Intent(BooksActivity.this, KafkaDonusumActivity.class);
-                    startActivity(intent);
 
-                    Toast.makeText(BooksActivity.this,"Dönüşüm", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(BooksActivity.this,"Hazır Değil!", Toast.LENGTH_SHORT).show();
                 }
 
                 if (position == 2){
