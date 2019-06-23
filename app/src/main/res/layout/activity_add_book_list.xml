@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Öncelik"
+            android:text="Puan"
             android:textAppearance="@android:style/TextAppearance.Medium" />
 
     <NumberPicker

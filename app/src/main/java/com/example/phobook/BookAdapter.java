@@ -22,6 +22,7 @@ public class BookAdapter extends FirestoreRecyclerAdapter<Book, BookAdapter.Book
 
         holder.textViewName.setText(model.getBookName());
         holder.textViewArtist.setText(model.getArtist());
+        holder.textViewNote.setText(model.getNote());
         holder.textViewPriority.setText(String.valueOf(model.getPriority()));
 
     }
@@ -44,12 +45,14 @@ public class BookAdapter extends FirestoreRecyclerAdapter<Book, BookAdapter.Book
         TextView textViewName;
         TextView textViewArtist;
         TextView textViewPriority;
+        TextView textViewNote;
 
         public BookHolder(@NonNull View itemView) {
             super(itemView);
             textViewName = itemView.findViewById(R.id.textView_title);
             textViewArtist = itemView.findViewById(R.id.textView_description);
             textViewPriority = itemView.findViewById(R.id.textView_priority);
+            textViewNote = itemView.findViewById(R.id.textView_note);
         }
     }
 }

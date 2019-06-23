@@ -24,7 +24,7 @@
                 android:background="@color/ust"
         />
         <Button
-                android:text="Liste"
+                android:text="Forum"
                 android:textColor="@color/yazi"
                 android:layout_width="150dp"
                 android:layout_height="45dp"

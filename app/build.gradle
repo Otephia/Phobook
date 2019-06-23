@@ -8,6 +8,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 28
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.example.phobook"
         minSdkVersion 16
         targetSdkVersion 28
@@ -32,6 +33,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.firebaseui:firebase-ui-firestore:5.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
     testİmplementation 'junit:junit:4.12'
     androidTestİmplementation 'com.android.support.test:runner:1.0.2'
     androidTestİmplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

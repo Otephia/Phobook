@@ -28,7 +28,7 @@
             android:textColor="@color/yazi"
             android:hint="Şifre"
             android:ems="10"
-            android:inputType="textVisiblePassword"
+            android:inputType="textPassword"
             android:textColorHint="@color/yazi"
     />
 
